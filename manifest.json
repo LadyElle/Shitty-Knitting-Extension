@@ -1,0 +1,23 @@
+{
+"manifest_version": 2,
+    "name": "Shitty Knitting Extension",
+    "description": "Reverses knit with purl and vice versa",
+    "version": "0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://www.redheart.com/*",
+                "https://www.ravelry.com/*",
+				"https://www.etsy.com/*",
+				"https://www.pinterest.com/*",
+				"http://www.yarnspirations.com/*",
+				"http://*.michaels.com/*"
+				
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
